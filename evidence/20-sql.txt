@@ -1,0 +1,10 @@
+mysql> SELECT id, name, email, phone FROM patient ORDER BY id LIMIT 5;
++----+----------------+-----------------------+------------+
+| id | name           | email                 | phone      |
++----+----------------+-----------------------+------------+
+|  1 | Demo Patient 1 | patient1@example.test | 0900000001 |
+|  2 | Demo Patient 2 | patient2@example.test | 0900000002 |
+|  3 | Demo Patient 3 | patient3@example.test | 0900000003 |
+|  4 | Demo Patient 4 | patient4@example.test | 0900000004 |
+|  5 | Demo Patient 5 | patient5@example.test | 0900000005 |
++----+----------------+-----------------------+------------+

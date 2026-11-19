@@ -1,0 +1,18 @@
+curl "http://127.0.0.1:18770/api/doctors?specialty=Cardiology&time=09%3A00" -H "Authorization: Bearer $TOKEN"
+
+{
+  "doctors": [
+    {
+      "id": 1,
+      "name": "Dr. Linh Nguyen",
+      "email": "doctor1@example.test",
+      "specialty": "Cardiology",
+      "availableTimes": [
+        "09:00",
+        "10:00",
+        "11:00",
+        "14:00"
+      ]
+    }
+  ]
+}

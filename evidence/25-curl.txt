@@ -1,0 +1,55 @@
+Authenticated as patient1@example.test using POST /api/auth/login with role PATIENT and the documented synthetic demo password. The returned token is represented by $TOKEN below.
+curl "http://127.0.0.1:18770/api/appointments" -H "Authorization: Bearer $TOKEN"
+
+{
+  "appointments": [
+    {
+      "id": 1,
+      "doctor": {
+        "id": 1,
+        "name": "Dr. Linh Nguyen",
+        "email": "doctor1@example.test",
+        "specialty": "Cardiology",
+        "availableTimes": [
+          "09:00",
+          "10:00",
+          "11:00",
+          "14:00"
+        ]
+      },
+      "patient": {
+        "id": 1,
+        "name": "Demo Patient 1",
+        "email": "patient1@example.test",
+        "phone": "0900000001"
+      },
+      "appointmentTime": "2026-11-20T09:00:00",
+      "reason": "Synthetic coursework appointment",
+      "status": "BOOKED"
+    },
+    {
+      "id": 4,
+      "doctor": {
+        "id": 1,
+        "name": "Dr. Linh Nguyen",
+        "email": "doctor1@example.test",
+        "specialty": "Cardiology",
+        "availableTimes": [
+          "09:00",
+          "10:00",
+          "11:00",
+          "14:00"
+        ]
+      },
+      "patient": {
+        "id": 1,
+        "name": "Demo Patient 1",
+        "email": "patient1@example.test",
+        "phone": "0900000001"
+      },
+      "appointmentTime": "2026-11-20T14:00:00",
+      "reason": "Demo consultation",
+      "status": "BOOKED"
+    }
+  ]
+}

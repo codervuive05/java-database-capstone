@@ -1,0 +1,8 @@
+mysql> CALL GetDailyAppointmentReportByDoctor('2026-11-20');
++-----------+-----------------+-------------------+
+| doctor_id | doctor_name     | appointment_count |
++-----------+-----------------+-------------------+
+|         1 | Dr. Linh Nguyen |                 4 |
+|         2 | Dr. Alex Tran   |                 0 |
+|         3 | Dr. Mai Le      |                 0 |
++-----------+-----------------+-------------------+
